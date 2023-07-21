@@ -132,3 +132,22 @@ int BinSrch(struct Array *temp, int x)
 
     return -1;
 }
+
+void InsSort(struct Array *temp)
+{
+    int i,j,key;
+
+    for(i = 1; i < temp->length; i++)
+    {
+        key = temp->A[i];
+        j = i - 1;
+
+        while(temp->A[j] > key && j >= 0)
+        {
+            temp->A[j+1] = temp->A[j];
+            j--;
+        }
+
+        temp->A[j+1] = key;
+    }
+}
