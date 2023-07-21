@@ -36,6 +36,7 @@ int main()
              << "7. IsSorted?" << endl
              << "8. Linear Search" << endl
              << "9. Binary Search" << endl
+             << "10. Insertion Sort" << endl
              << "20. Exit" << endl
              << endl;
 
@@ -123,6 +124,11 @@ int main()
                      << "cant perform binary search because the array isnt sorted\n"
                      << "either sort it first or use linear search" << endl;
 
+            break;
+        
+        case 10:
+            InsSort(&arr);
+            cout << "sucessfully sorted" << endl;
             break;
 
         case 20:
