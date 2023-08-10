@@ -1,3 +1,5 @@
+// converting a roman string into decimal equivalent
+
 #include <stdio.h>
 // #define I 1
 // #define V 5
